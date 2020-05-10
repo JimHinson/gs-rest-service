@@ -49,4 +49,11 @@ public class GreetingControllerTests {
 				.andExpect(jsonPath("$.content").value("Hello, Spring Community!"));
 	}
 
+	@Test
+	public void paramAbigailShouldReturnTailoredGift() throws Exception {
+		this.mockMvc.perform(get("/abigail").param("gift", "Diamonds are a girl's best friend"))
+				.andDo(print()).andExpect(status().isOk())
+				.andExpect(jsonPath("$.content").value("Diamonds are a girl's best friend!"));
+	}
+
 }
