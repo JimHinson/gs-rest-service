@@ -1,3 +1,6 @@
+mvn spring-boot:run
+mvn test
+curl
 :spring_version: current
 :toc:
 :project_id: gs-rest-service
