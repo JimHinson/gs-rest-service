@@ -4,7 +4,10 @@ curl http://localhost:8080/
 curl http://localhost:8080/actuator/health
 
 = TODO
+See issues in repo https://github.com/JimHinson/gs-rest-service.git
+
 persist
+mavenize
 :spring_version: current
 :toc:
 
